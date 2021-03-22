@@ -1,0 +1,34 @@
+presubmits:
+  - name: pre-commit
+    decorate: true
+    skip_report: false
+    always_run: true
+    context: aicoe-ci/prow/pre-commit
+    spec:
+      containers:
+        - image: quay.io/thoth-station/thoth-precommit-py38:v0.12.5
+          command:
+            - "pre-commit"
+            - "run"
+            - "--all-files"
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "2"
+  - name: kustomize-build
+    decorate: true
+    max_concurrency: 1
+    run_if_changed: ".*yaml"
+    skip_report: false
+    context: aicoe-ci/prow/kustomize-build
+    spec:
+      containers:
+        - image: quay.io/operate-first/opf-toolbox:v0.3.2
+          command:
+            - "./test-kustomize-build"
+          env:
+            - name: IS_AICOE_CI
+              value: "1"
+          resources:
+            requests:
+              memory: "256Mi"
