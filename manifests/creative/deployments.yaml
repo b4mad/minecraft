@@ -22,7 +22,7 @@ spec:
           resources:
             requests:
               cpu: 1
-              memory: 4Gi
+              memory: 1Gi
           readinessProbe:
             tcpSocket:
               port: 25565
@@ -85,9 +85,9 @@ spec:
             - name: SEED
               value: ""
             - name: MODE
-              value: "survival"
+              value: "creative"
             - name: MOTD
-              value: "B4mad Minecraft on Operate First!"
+              value: "Creative B4mad Minecraft on Operate First!"
             - name: PVP
               value: "false"
             - name: LEVEL_TYPE
