@@ -25,4 +25,3 @@ cd manifests && sops updatekeys secrets.enc.yaml
 ### Resources
 
 https://github.com/operate-first/support/issues/139
-
