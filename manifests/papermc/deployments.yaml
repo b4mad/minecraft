@@ -91,7 +91,7 @@ spec:
             - name: MOTD
               value: "Creative B4mad Minecraft on Operate First!"
             - name: PVP
-              value: "false"
+              value: "true"
             - name: LEVEL_TYPE
               value: "DEFAULT"
             - name: GENERATOR_SETTINGS
