@@ -40,6 +40,8 @@ spec:
             successThreshold: 1
             timeoutSeconds: 1
           env:
+            - name: OVERRIDE_SERVER_PROPERTIES
+              value: "TRUE"
             - name: EULA
               value: "TRUE"
             - name: TYPE
