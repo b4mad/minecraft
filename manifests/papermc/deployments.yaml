@@ -119,4 +119,4 @@ spec:
       volumes:
         - name: datadir
           persistentVolumeClaim:
-            claimName: minecraft-server-creative-datadir
+            claimName: minecraft-server-paper-datadir

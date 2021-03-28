@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: minecraft-server-creative-datadir
+  name: minecraft-server-paper-datadir
   labels:
     app: minecraft-server-paper
 spec:
