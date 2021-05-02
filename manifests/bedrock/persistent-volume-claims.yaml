@@ -1,9 +1,9 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: minecraft-server-bedrocke-datadir
+  name: minecraft-server-bedrock-datadir
   labels:
-    app: minecraft-server-bedrocke
+    app: minecraft-server-bedrock
 spec:
   accessModes:
     - ReadWriteOnce
