@@ -8,7 +8,7 @@ metadata:
 spec:
   externalTrafficPolicy: Cluster
   ports:
-    - nodePort: 19132
+    - nodePort: 39132
       port: 25565
       protocol: UDP
       targetPort: 25565
