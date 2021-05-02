@@ -47,7 +47,7 @@ spec:
             - name: TYPE
               value: "MAGMA"
             - name: VERSION
-              value: "48ec0a1"
+              value: "1.12.2"
             - name: DIFFICULTY
               value: "easy"
             - name: WHITELIST
