@@ -53,7 +53,7 @@ spec:
             - name: WHITELIST
               value: ""
             - name: OPS
-              value: "durandom,GNU_4K"
+              value: "durandom,GNU_4K,BoBoHD1237"
             - name: ICON
               value: ""
             - name: MAX_PLAYERS
