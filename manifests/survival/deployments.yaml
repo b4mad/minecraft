@@ -49,7 +49,7 @@ spec:
             - name: VERSION
               value: "LATEST"
             - name: DIFFICULTY
-              value: "easy"
+              value: "hard"
             - name: WHITELIST
               value: ""
             - name: OPS
